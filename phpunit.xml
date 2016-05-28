@@ -1,10 +1,10 @@
-<phpunit bootstrap="test/bootstrap.php"> 
+<phpunit bootstrap="noauto/bootstrap.php"> 
     <logging>
         <log type="coverage-clover" target="build/logs/clover.xml"/>
     </logging>
     <testsuites>
         <testsuite name="main">
-            <file>test/Test.php</file>
+            <file>noauto/Test.php</file>
         </testsuite>
     </testsuites>
     <filter>
@@ -12,7 +12,7 @@
             <directory suffix=".php">.</directory>
             <exclude>
                 <directory>vendor</directory>
-                <directory>test</directory>
+                <directory>noauto</directory>
             </exclude>
         </whitelist>
     </filter>

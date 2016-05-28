@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "license": "GNU GPL 2",
     "autoload": {
-        "exclude-from-classmap": ["/ReceiptOff.php", "/test/"]
+        "exclude-from-classmap": ["/ReceiptOff.php", "/noauto/"]
     },
     "require": {
         "corepos/composer-installer": "^1.0"
