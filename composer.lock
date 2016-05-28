@@ -4,25 +4,29 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "615b702a0569706805bef779513de107",
-    "content-hash": "147cf80c91bc4c05c38182d310bc4ac4",
+    "hash": "e24e8623667caec7a664d0d3d43cbc97",
+    "content-hash": "984a8fdec6e6002099545758ae10a3c0",
     "packages": [
         {
             "name": "corepos/composer-installer",
-            "version": "1.0.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/CORE-POS/ComposerInstaller.git",
-                "reference": "7ea84847cc5906a7316483fc423fcdfdf4c1e79e"
+                "reference": "08c6afda3a2ce2c2999254bdff341f86b6d01139"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/CORE-POS/ComposerInstaller/zipball/7ea84847cc5906a7316483fc423fcdfdf4c1e79e",
-                "reference": "7ea84847cc5906a7316483fc423fcdfdf4c1e79e",
+                "url": "https://api.github.com/repos/CORE-POS/ComposerInstaller/zipball/08c6afda3a2ce2c2999254bdff341f86b6d01139",
+                "reference": "08c6afda3a2ce2c2999254bdff341f86b6d01139",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.1",
+                "phpunit/phpunit": "^5.3"
             },
             "type": "composer-plugin",
             "extra": {
@@ -31,7 +35,10 @@
             "autoload": {
                 "psr-4": {
                     "COREPOS\\ComposerInstaller\\": "src/"
-                }
+                },
+                "exclude-from-classmap": [
+                    "/test"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -44,7 +51,7 @@
                 }
             ],
             "description": "A composer plugin to install CORE POS plugins",
-            "time": "2016-05-27 21:53:51"
+            "time": "2016-05-28 15:57:45"
         }
     ],
     "packages-dev": [
